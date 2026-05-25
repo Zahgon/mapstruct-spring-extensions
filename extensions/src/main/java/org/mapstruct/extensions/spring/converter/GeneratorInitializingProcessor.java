@@ -1,6 +1,5 @@
 package org.mapstruct.extensions.spring.converter;
 
-
 import com.squareup.javapoet.ClassName;
 import java.io.IOException;
 import java.io.Writer;
@@ -11,24 +10,24 @@ import javax.annotation.processing.ProcessingEnvironment;
 import javax.lang.model.SourceVersion;
 
 public abstract class GeneratorInitializingProcessor extends AbstractProcessor {
-  private final List<Generator> generators;
 
-  protected GeneratorInitializingProcessor(final Generator... generators) {
-    this.generators = List.of(generators);
-  }
+    private final List<Generator> generators;
 
-  @Override
-  public synchronized void init(final ProcessingEnvironment processingEnv) {
-    super.init(processingEnv);
-    generators.forEach(generator -> generator.init(processingEnv));
-  }
+    protected GeneratorInitializingProcessor(final Generator... generators) {
+        this.generators = List.of(generators);
+    }
 
-  @Override
-  public final SourceVersion getSupportedSourceVersion() {
-    return SourceVersion.latestSupported();
-  }
+    @Override
+    public synchronized void init(final ProcessingEnvironment processingEnv) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  protected final Writer openSourceFile(final Supplier<ClassName> classNameSupplier) throws IOException {
-    return processingEnv.getFiler().createSourceFile(classNameSupplier.get().canonicalName()).openWriter();
-  }
+    @Override
+    public final SourceVersion getSupportedSourceVersion() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    protected final Writer openSourceFile(final Supplier<ClassName> classNameSupplier) throws IOException {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 }

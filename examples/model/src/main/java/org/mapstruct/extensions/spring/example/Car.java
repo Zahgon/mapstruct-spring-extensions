@@ -1,40 +1,44 @@
 package org.mapstruct.extensions.spring.example;
 
 public class Car {
+
     private String make;
+
     private SeatConfiguration seatConfiguration;
+
     private CarType type;
+
     private Wheels wheels;
 
     public String getMake() {
-        return make;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setMake(final String make) {
-        this.make = make;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public SeatConfiguration getSeatConfiguration() {
-        return seatConfiguration;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setSeatConfiguration(final SeatConfiguration seatConfiguration) {
-        this.seatConfiguration = seatConfiguration;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public CarType getType() {
-        return type;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setType(final CarType type) {
-        this.type = type;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public Wheels getWheels() {
-        return wheels;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setWheels(Wheels wheels) {
-        this.wheels = wheels;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

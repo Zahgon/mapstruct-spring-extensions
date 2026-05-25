@@ -7,32 +7,33 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class Wheels implements Iterable<Wheel> {
+
     private List<Wheel> wheelsList = new ArrayList<>();
 
     public List<Wheel> getWheelsList() {
-        return wheelsList;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setWheelsList(List<Wheel> wheelsList) {
-        this.wheelsList = wheelsList;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void add(final Wheel wheel) {
-        wheelsList.add(wheel);
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     @Override
     public Iterator<Wheel> iterator() {
-        return getWheelsList().iterator();
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     @Override
     public void forEach(Consumer<? super Wheel> action) {
-        getWheelsList().forEach(action);
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     @Override
     public Spliterator<Wheel> spliterator() {
-        return getWheelsList().spliterator();
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

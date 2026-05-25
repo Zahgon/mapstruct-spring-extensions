@@ -11,22 +11,20 @@ import org.springframework.format.support.FormattingConversionService;
 
 @Configuration
 public class ConverterConfig {
-  private final ListableBeanFactory beanFactory;
 
-  public ConverterConfig(ListableBeanFactory beanFactory) {
-    this.beanFactory = beanFactory;
-  }
+    private final ListableBeanFactory beanFactory;
 
-  /**
-   * Without spring-boot-starter-web, no custom mappers will be added automatically; Therefore we
-   * register all our {@link org.springframework.core.convert.converter.Converter Converters}
-   * manually.
-   */
-  @Bean
-  public ConversionService conversionService() {
-    LoggerFactory.getLogger(ConverterConfig.class).info("ConversionService bean init");
-    final FormattingConversionService service = new DefaultFormattingConversionService();
-    ApplicationConversionService.addBeans(service, this.beanFactory);
-    return service;
-  }
+    public ConverterConfig(ListableBeanFactory beanFactory) {
+        this.beanFactory = beanFactory;
+    }
+
+    /**
+     * Without spring-boot-starter-web, no custom mappers will be added automatically; Therefore we
+     * register all our {@link org.springframework.core.convert.converter.Converter Converters}
+     * manually.
+     */
+    @Bean
+    public ConversionService conversionService() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 }

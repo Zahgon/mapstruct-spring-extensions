@@ -3,40 +3,44 @@ package org.mapstruct.extensions.spring.example;
 import java.util.List;
 
 public class CarDto {
+
     private String make;
+
     private SeatConfigurationDto seats;
+
     private String type;
+
     private List<WheelDto> wheels;
 
     public String getMake() {
-        return make;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setMake(final String make) {
-        this.make = make;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public SeatConfigurationDto getSeats() {
-        return seats;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setSeats(final SeatConfigurationDto seats) {
-        this.seats = seats;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public String getType() {
-        return type;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setType(final String type) {
-        this.type = type;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public List<WheelDto> getWheels() {
-        return wheels;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setWheels(List<WheelDto> wheels) {
-        this.wheels = wheels;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

@@ -3,94 +3,88 @@ package org.mapstruct.extensions.spring.converter;
 import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 import static org.mapstruct.extensions.spring.SpringMapperConfig.DEFAULT_CONFIGURATION_CLASS_NAME;
 import static org.mapstruct.extensions.spring.SpringMapperConfig.DEFAULT_CONVERSION_SERVICE_BEAN_NAME;
-
 import com.squareup.javapoet.ClassName;
 import java.util.List;
 
 public class ConversionServiceAdapterDescriptor {
-  public static final String DEFAULT_CONVERTER_SCAN_CLASS_NAME = "ConverterScan";
-  public static final String DEFAULT_CONVERTER_SCANS_CLASS_NAME = "ConverterScans";
 
-  private ClassName adapterClassName;
-  private String conversionServiceBeanName = DEFAULT_CONVERSION_SERVICE_BEAN_NAME;
-  private List<FromToMapping> fromToMappings;
-  private boolean lazyAnnotatedConversionServiceBean;
-  private String configurationClassName = DEFAULT_CONFIGURATION_CLASS_NAME;
+    public static final String DEFAULT_CONVERTER_SCAN_CLASS_NAME = "ConverterScan";
 
-  private boolean generateConverterScan;
+    public static final String DEFAULT_CONVERTER_SCANS_CLASS_NAME = "ConverterScans";
 
-  boolean hasNonDefaultConversionServiceBeanName() {
-    return isNotEmpty(getConversionServiceBeanName())
-            && !DEFAULT_CONVERSION_SERVICE_BEAN_NAME.equals(getConversionServiceBeanName());
-  }
+    private ClassName adapterClassName;
 
-  public ClassName getAdapterClassName() {
-    return adapterClassName;
-  }
+    private String conversionServiceBeanName = DEFAULT_CONVERSION_SERVICE_BEAN_NAME;
 
-  public ConversionServiceAdapterDescriptor adapterClassName(final ClassName adapterClassName) {
-    this.adapterClassName = adapterClassName;
-    return this;
-  }
+    private List<FromToMapping> fromToMappings;
 
-  public String getConversionServiceBeanName() {
-    return conversionServiceBeanName;
-  }
+    private boolean lazyAnnotatedConversionServiceBean;
 
-  public ConversionServiceAdapterDescriptor conversionServiceBeanName(
-      final String conversionServiceBeanName) {
-    this.conversionServiceBeanName = conversionServiceBeanName;
-    return this;
-  }
+    private String configurationClassName = DEFAULT_CONFIGURATION_CLASS_NAME;
 
-  public List<FromToMapping> getFromToMappings() {
-    return fromToMappings;
-  }
+    private boolean generateConverterScan;
 
-  public ConversionServiceAdapterDescriptor fromToMappings(
-      final List<FromToMapping> fromToMappings) {
-    this.fromToMappings = fromToMappings;
-    return this;
-  }
+    boolean hasNonDefaultConversionServiceBeanName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public boolean isLazyAnnotatedConversionServiceBean() {
-    return lazyAnnotatedConversionServiceBean;
-  }
+    public ClassName getAdapterClassName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ConversionServiceAdapterDescriptor lazyAnnotatedConversionServiceBean(
-      final boolean lazyAnnotatedConversionServiceBean) {
-    this.lazyAnnotatedConversionServiceBean = lazyAnnotatedConversionServiceBean;
-    return this;
-  }
+    public ConversionServiceAdapterDescriptor adapterClassName(final ClassName adapterClassName) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ConversionServiceAdapterDescriptor configurationClassName(
-          final String configurationClassName) {
-    this.configurationClassName = configurationClassName;
-    return this;
-  }
+    public String getConversionServiceBeanName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public String getConfigurationClassName() {
-    return configurationClassName;
-  }
+    public ConversionServiceAdapterDescriptor conversionServiceBeanName(final String conversionServiceBeanName) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public boolean isGenerateConverterScan() {
-    return generateConverterScan;
-  }
+    public List<FromToMapping> getFromToMappings() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ConversionServiceAdapterDescriptor generateConverterScan(final boolean generateConverterScan) {
-    this.generateConverterScan = generateConverterScan;
-    return this;
-  }
+    public ConversionServiceAdapterDescriptor fromToMappings(final List<FromToMapping> fromToMappings) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ClassName getConverterScanClassName() {
-    return ClassName.get(getAdapterClassName().packageName(), DEFAULT_CONVERTER_SCAN_CLASS_NAME);
-  }
+    public boolean isLazyAnnotatedConversionServiceBean() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ClassName getConverterScansClassName() {
-    return ClassName.get(getAdapterClassName().packageName(), DEFAULT_CONVERTER_SCANS_CLASS_NAME);
-  }
+    public ConversionServiceAdapterDescriptor lazyAnnotatedConversionServiceBean(final boolean lazyAnnotatedConversionServiceBean) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 
-  public ClassName getConverterRegistrationConfigurationClassName() {
-    return ClassName.get(getAdapterClassName().packageName(), configurationClassName);
-  }
+    public ConversionServiceAdapterDescriptor configurationClassName(final String configurationClassName) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public String getConfigurationClassName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public boolean isGenerateConverterScan() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public ConversionServiceAdapterDescriptor generateConverterScan(final boolean generateConverterScan) {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public ClassName getConverterScanClassName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public ClassName getConverterScansClassName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
+
+    public ClassName getConverterRegistrationConfigurationClassName() {
+        throw new UnsupportedOperationException("STUB: not implemented");
+    }
 }

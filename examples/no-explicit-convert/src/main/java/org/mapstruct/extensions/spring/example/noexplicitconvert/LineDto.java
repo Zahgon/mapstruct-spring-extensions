@@ -1,22 +1,24 @@
 package org.mapstruct.extensions.spring.example.noexplicitconvert;
 
 public class LineDto {
+
     private PointDto origin;
+
     private PointDto destination;
 
     public PointDto getOrigin() {
-        return origin;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setOrigin(PointDto origin) {
-        this.origin = origin;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public PointDto getDestination() {
-        return destination;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setDestination(PointDto destination) {
-        this.destination = destination;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

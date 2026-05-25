@@ -3,35 +3,34 @@ package org.mapstruct.extensions.spring.example;
 import java.util.Objects;
 
 public class Wheel {
+
     private WheelPosition position;
+
     private int diameter;
 
     public WheelPosition getPosition() {
-        return position;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setPosition(WheelPosition position) {
-        this.position = position;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public int getDiameter() {
-        return diameter;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setDiameter(int diameter) {
-        this.diameter = diameter;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Wheel wheel = (Wheel) o;
-        return diameter == wheel.diameter && position == wheel.position;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(position, diameter);
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

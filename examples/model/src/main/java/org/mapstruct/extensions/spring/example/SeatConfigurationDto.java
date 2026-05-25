@@ -1,22 +1,24 @@
 package org.mapstruct.extensions.spring.example;
 
 public class SeatConfigurationDto {
+
     private int seatCount;
+
     private String material;
 
     public int getSeatCount() {
-        return seatCount;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setSeatCount(final int seatCount) {
-        this.seatCount = seatCount;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public String getMaterial() {
-        return material;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setMaterial(final String material) {
-        this.material = material;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

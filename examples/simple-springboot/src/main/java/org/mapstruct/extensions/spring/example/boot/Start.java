@@ -14,24 +14,15 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class Start {
+
     public static void main(String[] args) {
-        SpringApplication.run(Start.class, args);
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     private static final Logger log = LoggerFactory.getLogger(Start.class);
 
     @Bean
     public CommandLineRunner commandLineRunner(ApplicationContext ctx, ConversionServiceAdapter adapter) {
-        return args -> {
-            final SeatConfiguration seatConf = new SeatConfiguration();
-            seatConf.setSeatMaterial(SeatMaterial.FABRIC);
-            final Car car = new Car();
-            car.setMake("make");
-            car.setSeatConfiguration(seatConf);
-
-            log.info("map start");
-            final CarDto carDto = adapter.mapCarToCarDto(car);
-            log.info(carDto.toString());
-        };
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }
